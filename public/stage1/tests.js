@@ -13,7 +13,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
       // 書き換え、ブラウザをリロードしてみてください。
       var elementId = 'firebrick';
       var element = 'change me!';
-
+      var element = document.getElementId(elementId);
       expect(element).to.be.instanceof(HTMLElement);
       expect(element).to.have.property('id', elementId);
 
